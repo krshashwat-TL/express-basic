@@ -12,8 +12,8 @@ app.get('/', (req, res) => {
   res.status(200).json({msg: "Home Route", errors: null});
 });
 
-app.get('/api/', (req, res) => {
-  res.status(200).json({msg: "About Route", errors: null});
+app.get('/api/health', (req, res) => {
+  res.status(200).json({msg: "Health check: All good", errors: null});
 });
 
 const PORT = process.env.PORT || 3000;
