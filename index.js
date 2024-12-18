@@ -16,7 +16,7 @@ app.get('/api/health', (req, res) => {
   res.status(200).json({msg: "Health check: All good", errors: null});
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
